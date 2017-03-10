@@ -14,8 +14,6 @@
 
         $jsonString = json_encode($object);
 
-        // salvestatakse string kujul: {"last_modified":1488894193,"text":"test sisu"}
-
         if(file_put_contents(FILENAME, $jsonString)){
             echo ('{"message":"saved successfully"}');
         }
